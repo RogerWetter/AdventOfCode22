@@ -4,8 +4,7 @@ let split = readFileSync('input.txt', 'utf-8').split("")
 
 const checkIfAllDifferent = (x) => {
   for (let i = 0; i < x.length; i++) {
-    for (let j = 0; j < x.length; j++) {
-      if (i===j)break
+    for (let j = i+1; j < x.length; j++) {
       if (x[i]===x[j]) return false
     }
   }
