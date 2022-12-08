@@ -8,7 +8,6 @@ let res = 0
 let res1 = []
 
 split.forEach(line => map.push(line.split('')))
-console.table(map)
 
 map.forEach((line, indexLine) => line.forEach((tree, indexTree) => {
   if (indexLine === 0 || indexLine === map.length - 1 || indexTree === 0 || indexTree === line.length - 1) {
