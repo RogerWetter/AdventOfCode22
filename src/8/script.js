@@ -26,9 +26,7 @@ map.forEach((line, indexLine) => line.forEach((tree, indexTree) => {
     let result = 0
     for (const i in trees) {
       result++
-      if (tree <= trees[i]) {
-        break
-      }
+      if (tree <= trees[i]) break
     }
     return result
   }
